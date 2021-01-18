@@ -1,4 +1,4 @@
-# clic2020-devkit  
+# clic2021-devkit  
 
 Challenge homepage: [compression.cc](http://www.compression.cc).
 
