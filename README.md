@@ -1,6 +1,6 @@
 # clic2020-devkit  
 
-Challenge homepage: [compression.cc](http://www.compression.cc)
+Challenge homepage: [compression.cc](http://www.compression.cc).
 
 The following helps working with the **Video challenge**.
 
