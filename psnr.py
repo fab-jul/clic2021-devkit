@@ -1,3 +1,19 @@
+#!/usr/bin/python3
+"""
+This is an example script that parses the input given to a perceptual metric
+part of the 2021 CLIC, perceptual track.
+
+The input is a CSV file with 3 columns. Each column contains the path to a PNG
+file. The first is the "original", then "method_a" and "method_b".
+
+This binary generates (on STDOUT, meaning you have to redirect its output to a
+file) a CSV containing the same first 3 columns as in the input, with a 4th
+column. This column will have the value of:
+
+0 if PSNR(original, method_a) > PSNR(original, method_b)
+1 otherwise.
+"""
+
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function

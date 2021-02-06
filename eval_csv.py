@@ -1,3 +1,15 @@
+"""
+This is the evaluation binary for the 2021 CLIC perceptual challenge.
+
+Example usage:
+python3 eval_csv.py --oracle_csv=oracle.csv --eval_csv=psnr.csv
+
+This should give you the score for "psnr.csv" which will be used to evaluation.
+
+Your method should create a similar CSV file, which should be uploaded to the
+CLIC website (compression.cc) once the test data is released.
+"""
+
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -41,7 +53,7 @@ def read_csv(file_name):
         logging.fatal('Expected CSV file to contain 4 columns. Found %d.',
           len(row))
 
-      contents[','.join(row[:3])] = row[-1]
+      contents[','.join(row[:3])] = row[4]
 
   return contents
 
