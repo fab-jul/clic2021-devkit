@@ -53,7 +53,7 @@ def read_csv(file_name):
         logging.fatal('Expected CSV file to contain 4 columns. Found %d.',
           len(row))
 
-      contents[','.join(row[:3])] = row[4]
+      contents[','.join(row[:3])] = row[3]
 
   return contents
 
