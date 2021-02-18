@@ -56,9 +56,9 @@ Once unzipped, this should contain 2730 PNG files. These are of the same size (7
 
 In addition to the PNG files, there are two important CSV files:
 
-***validation.csv*** - this file is an example CSV file which contains the triplet PNG files that are used in the evaluation. The goal of your binary is to take this file as input, and generate a CSV file containing the same triplets, and an additional column which should contain either a 0, or a 1. The last column should have a 0 if the pair <O,A> will be preferred by humans to the pair <O,B>. Otherwise the last column should contain a 1.
+***validation.csv*** - this file is an example CSV file which contains the triplet PNG files that are used in the evaluation. The columns in this validation file are O,A,B (the file paths to the Original, A and B). The goal of your binary is to take this file as input, and generate a CSV file containing the same triplets, and an additional column which should contain either a 0, or a 1. The last column should have a 0 if the pair <O,A> will be preferred by humans to the pair <O,B>. Otherwise the last column should contain a 1. The output file format is the same as for oracle.csv, meaning we expect the columns to be <O,A,B,T> where T is the predicted value.
 
-***oracle.csv*** - this file contains the “ground truth” and we provide it as a way to evaluate your metric by running “eval_csv.py”. This file will NOT be given to participants as part of the test set.
+***oracle.csv*** - this file contains the “ground truth” and we provide it as a way to evaluate your metric by running “eval_csv.py”. This file will NOT be given to participants as part of the test set. The columns are <O,A,B,T> where T is the target value.
 
 
 Here is a short description of the scripts related to the pereceptual challenge:
