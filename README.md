@@ -71,3 +71,9 @@ python3 eval_csv.py --oracle_csv oracle.csv --eval_csv psnr.csv
 ```
 
 For convenience (and perhaps as a very naive starting point), we provide ***psnr.py*** which is a very simple script which can be used to produce outputs that are compatible with the evaluation script. This takes the validation.csv file (specified as an argument) and produces output compatible with eval_csv.py.
+
+### Submitting to the validation/test server
+
+Please follow our official submission form at [http://compression.cc/submit/](http://compression.cc/submit/). Choose the "Perceptual" task. You will need to provide the CSV file your algorithm has generated.
+
+To view the current leaderboard, please go to [http://compression.cc/leaderboard/perceptual/valid/](http://compression.cc/leaderboard/perceptual/valid/). 
