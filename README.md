@@ -72,6 +72,38 @@ python3 eval_csv.py --oracle_csv oracle.csv --eval_csv psnr.csv
 
 For convenience (and perhaps as a very naive starting point), we provide ***psnr.py*** which is a very simple script which can be used to produce outputs that are compatible with the evaluation script. This takes the validation.csv file (specified as an argument) and produces output compatible with eval_csv.py.
 
+### Test Data (Updated on April 29th, 2021)
+
+We released the following files:
+
+* the oracle file (CSV) is [clic_2021_test.zip](https://storage.googleapis.com/clic2021_public/perceptual/test/clic_2021_test.zip)
+* the crop files, all of which need to be downloaded:
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/0.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/0.tar) MD5 (0.tar) = 1051e8adc4763c7f43a8bdde4007b08a
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/1.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/1.tar) MD5 (1.tar) = 015822694e53692cf6c9c68f6186ee1a
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/2.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/2.tar) MD5 (2.tar) = 76bf1c66114f882d040b3bc1ef07bb9a
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/3.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/3.tar) MD5 (3.tar) = 5dcd38f56982bc231156f63c2c7de97f
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/4.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/4.tar) MD5 (4.tar) = 09c6c620157fdf08e23c0d905af4536d
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/5.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/5.tar) MD5 (5.tar) = f6ba7d89dd69de00d71d86a8f02a9538
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/6.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/6.tar) MD5 (6.tar) = faf4e522548b0e6370bfc868e2e404c8
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/7.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/7.tar) MD5 (7.tar) = 8593b89231c0418a69f89c6187e0202a
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/8.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/8.tar) MD5 (8.tar) = 9d369a0b10ee923815b49b3c27726eee
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/9.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/9.tar) MD5 (9.tar) = 30876781abcd554939125490f8dc28a4
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/a.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/a.tar) MD5 (a.tar) = 5164040b4acd707575084968b0f94808
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/b.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/b.tar) MD5 (b.tar) = 34bc20563534730265dc26de12a29764
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/c.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/c.tar) MD5 (c.tar) = a3e8238bc5300d969e3b7421b0306bf6
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/d.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/d.tar) MD5 (d.tar) = 503dca354a62b9edd477c9b35d3afdf7
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/e.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/e.tar) MD5 (e.tar) = 1d5da08c1eb8f26463fd7c80e0be920b
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/f.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/f.tar) MD5 (f.tar) = 3425385b344c5daf4bd7a3e526ff07a7
+
+
+Once you've downloaded all the files, you'll need to unarchive them. 
+
+```bash
+unzip clic_2021_test.zip
+tar -xvf *.tar
+```
+This should yield the CSV file that you'll use to produce the results. The file paths are all relative to the directory where you unarchived everything.
+
 ### Submitting to the validation/test server
 
 Please follow our official submission form at [http://compression.cc/submit/](http://compression.cc/submit/). Choose the "Perceptual" task. You will need to provide the CSV file your algorithm has generated.
