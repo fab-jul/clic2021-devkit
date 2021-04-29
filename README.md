@@ -95,6 +95,14 @@ We released the following files:
    * [https://storage.googleapis.com/clic2021_public/perceptual/test/e.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/e.tar) MD5 (e.tar) = 1d5da08c1eb8f26463fd7c80e0be920b
    * [https://storage.googleapis.com/clic2021_public/perceptual/test/f.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/f.tar) MD5 (f.tar) = 3425385b344c5daf4bd7a3e526ff07a7
 
+You could use the following snippet to download the files in parallel:
+
+```bash
+wget https://storage.googleapis.com/clic2021_public/perceptual/test/clic_2021_test.zip
+for i in 0 1 2 3 4 5 6 7 8 9 a b c d e f; do
+ # Note: remove the ampersand if you don't want to have 16 wget processes running at once
+ wget https://storage.googleapis.com/clic2021_public/perceptual/test/$i.tar &
+done```
 
 Once you've downloaded all the files, you'll need to unarchive them. 
 
