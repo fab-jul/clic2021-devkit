@@ -76,7 +76,7 @@ For convenience (and perhaps as a very naive starting point), we provide ***psnr
 
 We released the following files:
 
-* the oracle file (CSV) is [clic_2021_test.zip](https://storage.googleapis.com/clic2021_public/perceptual/test/clic_2021_test.zip)
+* the test file (CSV) is [clic_2021_test.zip](https://storage.googleapis.com/clic2021_public/perceptual/test/clic_2021_test.zip). See "validation.csv" above for the details. This has the same format.
 * the crop files, all of which need to be downloaded:
    * [https://storage.googleapis.com/clic2021_public/perceptual/test/0.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/0.tar) MD5 (0.tar) = 1051e8adc4763c7f43a8bdde4007b08a
    * [https://storage.googleapis.com/clic2021_public/perceptual/test/1.tar](https://storage.googleapis.com/clic2021_public/perceptual/test/1.tar) MD5 (1.tar) = 015822694e53692cf6c9c68f6186ee1a
