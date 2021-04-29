@@ -102,7 +102,8 @@ wget https://storage.googleapis.com/clic2021_public/perceptual/test/clic_2021_te
 for i in 0 1 2 3 4 5 6 7 8 9 a b c d e f; do
  # Note: remove the ampersand if you don't want to have 16 wget processes running at once
  wget https://storage.googleapis.com/clic2021_public/perceptual/test/$i.tar &
-done```
+done
+```
 
 Once you've downloaded all the files, you'll need to unarchive them. 
 
