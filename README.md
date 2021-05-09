@@ -109,7 +109,7 @@ Once you've downloaded all the files, you'll need to unarchive them.
 
 ```bash
 unzip clic_2021_test.zip
-tar -xvf *.tar
+for i in *.tar; do tar -xvf $i; done
 ```
 This should yield the CSV file that you'll use to produce the results. The file paths are all relative to the directory where you unarchived everything.
 
