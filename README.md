@@ -67,6 +67,10 @@ Here is a short description of the scripts related to the pereceptual challenge:
 
 Example usage:
 ```bash
+# You only need to run this command once to install absl-py (a library that's used by eval_csv)
+pip install absl-py
+
+# Run this command as many times as you'd like
 python3 eval_csv.py --oracle_csv oracle.csv --eval_csv psnr.csv
 ```
 
