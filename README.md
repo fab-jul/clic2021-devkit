@@ -76,7 +76,7 @@ python3 eval_csv.py --oracle_csv oracle.csv --eval_csv psnr.csv
 
 For convenience (and perhaps as a very naive starting point), we provide ***psnr.py*** which is a very simple script which can be used to produce outputs that are compatible with the evaluation script. This takes the validation.csv file (specified as an argument) and produces output compatible with eval_csv.py.
 
-### Test Data (Updated on April 29th, 2021)
+### Test Data (Updated on January 20th, 2022, with the release of the oracle)
 
 We released the following files:
 
@@ -116,6 +116,11 @@ unzip clic_2021_test.zip
 for i in *.tar; do tar -xvf $i; done
 ```
 This should yield the CSV file that you'll use to produce the results. The file paths are all relative to the directory where you unarchived everything.
+
+### Ground Truth (Oracle Released: January 20th, 2022)
+
+The oracle file (i.e., the file you can use to verify the performance of your algorithm/train new algorithms with this data) has been released. Please download it with the link below:
+   * [https://storage.googleapis.com/clic2021_public/perceptual/test/clic_2021_perceptual_oracle.zip](https://storage.googleapis.com/clic2021_public/perceptual/test/clic_2021_perceptual_oracle.zip) MD5 (clic_2021_perceptual_oracle.zip) = c8f73bb863dfed677fe897dade35c89a
 
 ### Submitting to the validation/test server
 
