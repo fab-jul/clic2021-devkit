@@ -40,6 +40,6 @@ We provide a script to convert the .mp4s of the validation set
 into PNGs *of the required format*:
 
 ```bash
-python convert_to_pngs.py <path/to/where/you/extracted/videos.zip> \
-  --png_out_root <path/to/output>
+python convert_to_pngs.py path/to/where/you/extracted/videos.zip \
+  --png_out_root path/to/output
 ```
