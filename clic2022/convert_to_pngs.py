@@ -29,6 +29,7 @@ def _convert_video_to_pngs(video_path: str, png_out_root: str):
 def convert_videos_to_pngs(video_paths: Sequence[str],
                            png_out_root: str,
                            num_processes: int = 8):
+    print(f"Starting conversion with {num_processes} processes...")
     pool = futures.ProcessPoolExecutor(num_processes)
     futs = []
     for video_path in video_paths:
@@ -46,10 +47,12 @@ def main():
                    help="Where you extracted the videos.zip file.")
     p.add_argument("--png_out_root", help="Root dir of where to store PNGs.",
                    required=True)
+    p.add_argument("--num_processes", type=int, default=8,
+                   help="How many processes (cores) to use for conversion.")
     flags = p.parse_args()
 
     dataset_download_location = flags.dataset_download_location
-    png_out_root = flags.png_out_root
+    print(f"Checking for mp4 files at {dataset_download_location}...")
     
     video_paths = []
     for folder in EXPECTED_FOLDERS:
@@ -59,10 +62,11 @@ def main():
         video_paths_of_folder = sorted(
             glob.glob(os.path.join(full_folder_path, "*.mp4")))
         if not video_paths_of_folder:
-            raise ValueError(f"No mp4 found in {video_paths_of_folder}")
+            raise ValueError(f"No mp4s found in {video_paths_of_folder}")
         video_paths += video_paths_of_folder
 
-    convert_videos_to_pngs(video_paths, png_out_root)
+    print(f"Found {len(video_paths)} videos...")
+    convert_videos_to_pngs(video_paths, flags.png_out_root, flags.num_processes)
 
 
 if __name__ == "__main__":
