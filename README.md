@@ -122,6 +122,10 @@ This should yield the CSV file that you'll use to produce the results. The file 
 The oracle file (i.e., the file you can use to verify the performance of your algorithm/train new algorithms with this data) has been released. Please download it with the link below:
    * [https://storage.googleapis.com/clic2021_public/perceptual/test/clic_2021_perceptual_oracle.zip](https://storage.googleapis.com/clic2021_public/perceptual/test/clic_2021_perceptual_oracle.zip) MD5 (clic_2021_perceptual_oracle.zip) = c8f73bb863dfed677fe897dade35c89a
 
+The oracle file is unfiltered, which means that any data cleanup is up to you. We left it like this on purpose, in order to allow participants to better model the human uncerntainty. We would like to highlight the fact that there is noise in this data, and therefore it's possible that a triplet might appear multiple times with both a positive and a negative label. 
+
+If there's enough interest, we could be convinced to release an updated oracle which matches the cleanup methods we employed before using the data for the final scoring of CLIC 2021.
+
 ### Submitting to the validation/test server
 
 Please follow our official submission form at [http://compression.cc/submit/](http://compression.cc/submit/). Choose the "Perceptual" task. You will need to provide the CSV file your algorithm has generated.
