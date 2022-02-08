@@ -24,11 +24,20 @@ The submission server expects a decoder.zip file.
 For the example submission, it can be creates as follows
 
 ```sh
-zip decoder.zip decode.py decode_helper.py
+chmod +x decode
+zip decoder.zip decode decode.py decode_helper.py
 ```
 
-Note that we package two files. The server will then unpack the zip
-and call `python3 decode.py`. See also `simuilate_server_decode.sh`.
+Note that we package three files. The server will then unpack the zip
+and execute `decode`. For us, `decode` just calls the python version:
+
+```
+# Our decode
+#!/bin/bash
+python3 decode.py
+```
+
+But you could do more complicated things. See also `simuilate_server_decode.sh`.
 
 ## Test locally
 

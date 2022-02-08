@@ -19,8 +19,8 @@ cp $OUTPUTS_ZIP $TMP_SERVER_DIR
 
 pushd $TMP_SERVER_DIR
 unzip $DECODER_ZIP
-# ...then calls decode.py
-python3 decode.py
+# ...then calls decode
+./decode
 
 popd
 rm -rf $TMP_SERVER_DIR
