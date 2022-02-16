@@ -78,7 +78,7 @@ For convenience (and perhaps as a very naive starting point), we provide ***psnr
 
 ### Test Data (Updated on January 20th, 2022, with the release of the oracle)
 
-We released the following files:
+We released the following files which contain **768x768** (mostly - some files are slightly smaller in dimensions) crops:
 
 * the test file (CSV) is [clic_2021_test.zip](https://storage.googleapis.com/clic2021_public/perceptual/test/clic_2021_test.zip). See "validation.csv" above for the details. This has the same format.
 * the crop files, all of which need to be downloaded:
