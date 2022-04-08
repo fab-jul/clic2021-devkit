@@ -63,6 +63,8 @@ def read_csv(file_name):
 
 def psnr(a, b):
   mse = np.mean((a.flatten() - b.flatten()) ** 2)
+  if mse < 1e-6:
+    return 108.14
   return 10 * np.log10(255**2 / mse)
 
 def process_triplet(item):
