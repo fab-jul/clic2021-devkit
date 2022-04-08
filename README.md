@@ -162,7 +162,7 @@ for i in *.tar; do tar -xvf $i; done
 ```
 This should yield the CSV file that you'll use to produce the results. The file paths are all relative to the directory where you unarchived everything.
 
-### Ground Truth (Oracle Released: January 20th, 2022)
+### 2021 Ground Truth (Oracle Released: January 20th, 2022)
 
 The oracle file (i.e., the file you can use to verify the performance of your algorithm/train new algorithms with this data) has been released. Please download it with the link below:
    * [https://storage.googleapis.com/clic2021_public/perceptual/test/clic_2021_perceptual_oracle.zip](https://storage.googleapis.com/clic2021_public/perceptual/test/clic_2021_perceptual_oracle.zip) MD5 (clic_2021_perceptual_oracle.zip) = c8f73bb863dfed677fe897dade35c89a
