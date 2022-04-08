@@ -83,7 +83,7 @@ We've released the testing image files below. Please download them in order to p
 
 The CSV file needed to compute binary decisions can be downloaded from:
   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/clic2022_test.csv](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/clic2022_test.csv)
-        Hash (md5):		942edd4ab592c196cf30b27e558bad66
+        Hash (md5):		b3812cd346f449a148efd41a4cb6ce58
 
 The cropped images to be downloaded are as follows:
    * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/0.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/0.zip)
