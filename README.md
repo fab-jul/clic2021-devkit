@@ -76,7 +76,52 @@ python3 eval_csv.py --oracle_csv oracle.csv --eval_csv psnr.csv
 
 For convenience (and perhaps as a very naive starting point), we provide ***psnr.py*** which is a very simple script which can be used to produce outputs that are compatible with the evaluation script. This takes the validation.csv file (specified as an argument) and produces output compatible with eval_csv.py.
 
-### Test Data (Updated on January 20th, 2022, with the release of the oracle)
+### 2022 Test Data (Released April 8th, 2022)
+
+We've released the testing image files below. Please download them in order to produce the output from your algorithm.
+
+
+The CSV file needed to compute binary decisions can be downloaded from:
+  * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/clic2022_test.csv](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/clic2022_test.csv)
+        Hash (md5):		942edd4ab592c196cf30b27e558bad66
+
+The cropped images to be downloaded are as follows:
+   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/0.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/0.zip)
+        Hash (md5):             b6eddbed2e88bfe20c101862a48e9f6c
+   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/1.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/1.zip)
+        Hash (md5):             ce7a5e67fe069860dee965a015380eed
+   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/2.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/2.zip)
+        Hash (md5):             cd8a305287bcf9b953f57bf982064be8
+   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/3.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/3.zip)
+        Hash (md5):             9de2367d274b38d04bf846ed5257d7c0
+   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/4.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/4.zip)
+        Hash (md5):             95eadd87afbf5034dc86010b977d29f5
+   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/5.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/5.zip)
+        Hash (md5):             55af0df91e6bb8fe7f3e70ed4d37b497
+   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/6.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/6.zip)
+        Hash (md5):             5e45727275e6d78ab6ec3ac28bbf62ed
+   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/7.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/7.zip)
+        Hash (md5):             96db3240eabfeeb90f007564a5a68dcd
+   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/8.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/8.zip)
+        Hash (md5):             bc7efed7f27d4d0649b6d4d6604dd74b
+   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/9.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/9.zip)
+        Hash (md5):             e081e2eece15b352d1b90c6b5d2aa6dd
+   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/a.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/a.zip)
+        Hash (md5):             69432ac41277b9dc30a02af78064c47e
+   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/b.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/b.zip)
+        Hash (md5):             b404bcaf3fd1cdda3025cc9a5881cc39
+   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/c.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/c.zip)
+        Hash (md5):             dd8d331c795913ec6ed940cb6c8e002c
+   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/d.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/d.zip)
+        Hash (md5):             380d2c38410dd5152ec6f3940c453ed6
+   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/e.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/e.zip)
+        Hash (md5):             1e15862bb4fb4d93fe647d32b3a2f25f
+   * [https://storage.googleapis.com/clic2022_public/test_sets/perceptual/f.zip](https://storage.googleapis.com/clic2022_public/test_sets/perceptual/f.zip)
+        Hash (md5):             271edee5431a82c6831cb20b0a46c921
+
+
+
+### 2021 Test Data (Updated on January 20th, 2022, with the release of the oracle)
 
 We released the following files which contain **768x768** (mostly - some files are slightly smaller in dimensions) crops:
 
